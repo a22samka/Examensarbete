@@ -24,3 +24,21 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("hashchange", handleHashChange);
     handleHashChange(); // Kör en gång vid sidladdning
 });
+
+///------------------Anime.js lösning--------------------\\\
+console.log("Laddat");
+// Hämta alla produktkort
+
+const productCards = document.querySelectorAll('.product-card');
+
+// Loopar igenom varje kort och lägger till hover-animation
+productCards.forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    anime({
+      targets: card,
+      scale: 1.05,
+      duration: 300,
+      easing: 'easeInOutQuad'
+    });
+  });
+});
