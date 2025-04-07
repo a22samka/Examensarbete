@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 ///------------------Anime.js lösning--------------------\\\
 console.log("Laddat");
 // Hämta alla produktkort
-
+window.onload = () => {
 const productCards = document.querySelectorAll('.product-card');
 
 // Loopar igenom varje kort och lägger till hover-animation
@@ -42,3 +42,4 @@ productCards.forEach(card => {
     });
   });
 });
+};
