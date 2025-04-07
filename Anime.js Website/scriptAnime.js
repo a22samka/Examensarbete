@@ -29,17 +29,25 @@ document.addEventListener("DOMContentLoaded", function () {
 console.log("Laddat");
 // Hämta alla produktkort
 window.onload = () => {
-const productCards = document.querySelectorAll('.product-card');
+    const productCards = document.querySelectorAll('.product-card');
 
-// Loopar igenom varje kort och lägger till hover-animation
-productCards.forEach(card => {
-  card.addEventListener('mouseenter', () => {
-    anime({
-      targets: card,
-      scale: 1.05,
-      duration: 300,
-      easing: 'easeInOutQuad'
+    // Loopar igenom varje kort och lägger till hover-animation
+    productCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            anime({
+            targets: card,
+            scale: 1.05,
+            duration: 300,
+            easing: 'easeInOutQuad'
+            });
+        });
+        card.addEventListener('mouseleave', () => {
+            anime({
+            targets: card,
+            scale: 1,
+            duration: 300,
+            easing: 'easeInOutQuad'
+            });
+        });
     });
-  });
-});
 };
