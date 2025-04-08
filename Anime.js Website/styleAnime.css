@@ -15,16 +15,18 @@ body {
     padding: 0px;
 }
 
+
 nav {
     display: flex;
     position:sticky;
     top:0;
-    justify-content: left;
-    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
     background-color: #f1773a;
     padding:10px;
     margin:0px;
    z-index: 100;
+   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
 }
 
 nav a {
@@ -39,6 +41,34 @@ nav a {
 nav a.active {
     background-color: #c66434;
 
+}
+
+.navLinks{
+    display: flex;
+    gap: 20px;
+}
+
+.navLinks img{
+    width:53px;
+    height:53px;
+}
+.logoText {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-right:30px;
+  }
+
+.navIcons{
+    display: flex;
+    gap: 15px;
+}
+
+.navIcons img{
+    width: 40px;  
+    height: 40px;
 }
 
 .page {
@@ -59,6 +89,7 @@ nav a.active {
 .product-section {
     flex: 3;
     padding: 20px;
+    margin-left:20%;
     
     
 }
@@ -123,21 +154,21 @@ nav a.active {
 
 .sidebar {
     flex: 1;
-    background: #545454;
-    position: sticky;
-    top: 65px; 
+    background: #606060;
+    position: fixed;
+    top: 73px; 
     height:fit-content;
-    max-width:20%;
-    margin:0px;
+    max-width:25%;
+    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.20);
 
 }
 
 .sidebar h2 {
-    font-size: 22px;
+    font-size: 17px;
     margin-bottom: 15px;
     padding-left:10px;
     margin-top:15px;
-    color:white;
+    color:#e3e3e3;
     text-align: left;
 }
 
@@ -145,6 +176,7 @@ nav a.active {
     list-style: none;
     padding: 0px;
     margin:0px;
+    
 }
 
 .sidebar ul li {
@@ -154,14 +186,16 @@ nav a.active {
 .sidebar ul li a {
     display: block;
     text-decoration: none;
-    background: #626262;
+    background: #545454;
     color: white;
-    padding: 14.2px;
+    padding: 14px;
     text-align: center;
+
 }
 
 .sidebar ul li a:hover {
-    background: #545454;
+    background: #606060;
+    box-shadow: 2px 0px 0 rgba(0, 0, 0, 0.55);
 }
 .Licenser{
     border-radius: 10px;
