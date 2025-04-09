@@ -30,7 +30,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #e0e0e0;
     text-decoration: none;
     font-weight: bold;
     padding: 30px 12px 2px;
@@ -39,7 +39,7 @@ nav a {
 }
 
 nav a.active {
-color:#e0e0e0
+color:white;
  
 
 }
@@ -145,10 +145,11 @@ color:#e0e0e0
 
 /* Add to Cart Button */
 .cardBtn {
-    background: #55da24;
+    background: #1ba41f;
     color: white;
-    padding: 10px 15px;
+    padding: 4.5px 40%;
     border: none;
+    font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -197,6 +198,12 @@ color:#e0e0e0
 .sidebar ul li a:hover {
     background: #606060;
     box-shadow: 2px 0px 0 rgba(0, 0, 0, 0.55);
+}
+.omOssText{
+    background-color:#606060;
+    color:white;
+    padding:30px 30px 20px;
+    border-radius: 2px;
 }
 .Licenser{
     border-radius: 10px;
