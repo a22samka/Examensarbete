@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const pages = document.querySelectorAll(".page");
-    const navLinks = document.querySelectorAll(".nav-link");
+    const navLinks = document.querySelectorAll("nav a");
 
     function showPage(pageId) {
         pages.forEach(page => {
@@ -34,19 +34,23 @@ window.onload = () => {
     // Loopar igenom varje kort och lägger till hover-animation
     productCards.forEach(card => {
         card.addEventListener('mouseenter', () => {
+            productCards.forEach(otherCard => {
             anime({
-            targets: card,
-            scale: 1.05,
+            targets: otherCard,
+            scale: otherCard === card ? 1.15 : 0.97,
             duration: 300,
             easing: 'easeInOutQuad'
             });
         });
-        card.addEventListener('mouseleave', () => {
-            anime({
-            targets: card,
-            scale: 1,
-            duration: 300,
-            easing: 'easeInOutQuad'
+    });
+            card.addEventListener('mouseleave', () => {
+                productCards.forEach(otherCard => {
+                anime({
+                targets: otherCard,
+                scale: 1,
+                duration: 300,
+                easing: 'easeInOutQuad'
+                });
             });
         });
     });
