@@ -36,17 +36,38 @@ window.onload = () => {
         card.addEventListener('mouseenter', () => {
             productCards.forEach(otherCard => {
             anime({
-            targets: otherCard,
-            scale: otherCard === card ? 1.15 : 0.97,
-            duration: 300,
-            easing: 'easeInOutQuad'
+                targets: otherCard,
+                scale: otherCard === card ? 1.18 : 0.98,
+                duration: 300,
+                easing: 'easeInOutQuad'
             });
+        if (otherCard === card) {
+            anime({
+              targets: otherCard.querySelectorAll('p, button'),
+              scale: 1.10,
+              duration: 300,
+              easing: 'easeInOutQuad'
+            });
+          } else {
+            anime({
+              targets: otherCard.querySelectorAll('p, button'),
+              scale: 1,
+              duration: 300,
+              easing: 'easeInOutQuad'
+            });
+          }
         });
     });
-            card.addEventListener('mouseleave', () => {
-                productCards.forEach(otherCard => {
-                anime({
+        card.addEventListener('mouseleave', () => {
+            productCards.forEach(otherCard => {
+            anime({
                 targets: otherCard,
+                scale: 1,
+                duration: 300,
+                easing: 'easeInOutQuad'
+                });
+            anime({
+                targets: otherCard.querySelectorAll('p, button'),
                 scale: 1,
                 duration: 300,
                 easing: 'easeInOutQuad'
