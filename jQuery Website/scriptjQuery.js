@@ -32,5 +32,12 @@ $(document).ready(function () {
       function () {
         // Mus över: förstora kortet
         $(this).css('transform', 'scale(1.15)');
-      });
-    });
+    },
+    function () {
+      // Mus lämnar: återställ allt
+      $('.product-card').css('transform', 'scale(1)');
+      $('.product-card').find('h2, p, .price, button').css('transform', 'scale(1)');
+    }
+  );
+});
+    
