@@ -25,3 +25,12 @@ document.addEventListener("DOMContentLoaded", function () {
     handleHashChange(); // Kör en gång vid sidladdning
 });
 
+///////------- jQuery Lösning --------\\\\\\\
+
+$(document).ready(function () {
+    $('.product-card').hover(
+      function () {
+        // Mus över: förstora kortet
+        $(this).css('transform', 'scale(1.15)');
+      });
+    });
