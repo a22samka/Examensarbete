@@ -31,12 +31,17 @@ $(document).ready(function () {
     $('.product-card').hover(
       function () {
         // Mus över: förstora kortet
+        $('.product-card, .product-card h2, .product-card p, .product-card .price, .product-card button').css('transition', 'transform 0.3s ease');
         $(this).css('transform', 'scale(1.15)');
+
+        $('.product-card').not(this).css('transform', 'scale(0.97)');
+
+        $(this).find(' p, button').css('transform', 'scale(1.1)');
     },
     function () {
       // Mus lämnar: återställ allt
       $('.product-card').css('transform', 'scale(1)');
-      $('.product-card').find('h2, p, .price, button').css('transform', 'scale(1)');
+      $('.product-card').find('p, button').css('transform', 'scale(1)');
     }
   );
 });
