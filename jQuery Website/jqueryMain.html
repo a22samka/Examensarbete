@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>Välkommen</title>
+    <link rel="stylesheet" href="styleJQuery.css">
+</head>
+<body>
+    <script src="scriptjQuery.js"></script>
+    <div class="container">
+        <nav>
+            <div class="navLinks">
+                <div class="logo">
+                    <img src="logoIcon.svg">
+                    <span class="logoText">DATABUTIKEN</span>
+                </div>
+                <a href="#"  data-page="home">Hem</a>
+                <a href="#about"  data-page="about">Om oss</a>
+                <a href="#contact"  data-page="contact">Licenser</a>
+            </div>
+            <div class="navIcons">
+                <img src="searchIcon.svg">
+                <img src="loginIcon.svg">
+            </div>
+        </nav>
+<!--///////////////////  PAGE 1 - HOMEPAGE  \\\\\\\\\\\\\\\\\\-->
+        <div id="home" class="page active">
+            <div class="home-container">
+                <div class="sidebar">
+                    <h2> KATEGORIER <img src="sidebarArrowDown.svg"></h2>
+                    <ul>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Stationära Datorer</a></li>
+                        <li><a href="#">Smartphones & Tablets</a></li>
+                        <li><a href="#">Spelkonsoller</a></li>
+                        <li><a href="#">Ljud & Hörlurar</a></li>
+                        <li><a href="#">Tangentbord</a></li>
+                        <li><a href="#">Datormöss</a></li>
+                        <li><a href="#">Datorkomponenter</a></li>
+                        <li><a href="#">Smartwatches</a></li>
+                        <li><a href="#">Smarta hem & IoT</a></li>
+                        <li><a href="#">Kamera & Fotografi</a></li>
+                        <li><a href="#">Kablar & Adaptrar</a></li>
+                        <li><a href="#">Tillbehör</a></li>
+
+                    </ul>
+                </div>
+                <div class="product-section">
+                    <div class="product-grid">
+                        
+                        <!-- Product Card 1 -->
+                        <div class="product-card">
+                            <img src="Laptop.jpg" alt="Product Image">
+                            <h2>Laptop</h2>
+                            <p>Mycket bra och snabb laptop som fungerar till allt.</p>
+                            <div class="price">3599kr</div>
+                            <button class="cardBtn">Köp</button>
+                        </div>
+            
+                        <!-- Product Card 2 -->
+                        <div class="product-card">
+                            <img src="AppleDator.jpg" alt="Product Image">
+                            <h2>Stationär Dator</h2>
+                            <p>Dator från ett av de största företagen i världen.</p>
+                            <div class="price">13999kr</div>
+                            <button class="cardBtn">Köp</button>
+                        </div>
+            
+                        <!-- Product Card 3 -->
+                        <div class="product-card">
+                            <img src="PhoneSamsung.jpg" alt="Product Image">
+                            <h2>Mobiltelefon</h2>
+                            <p>Senaste mobilen med 128gb minne.</p>
+                            <div class="price">8799kr</div>
+                            <button class="cardBtn">Köp</button>
+                        </div>
+                    </div>
+                    <div class="product-grid">
+
+                        <!-- Product Card 4 -->
+                        <div class="product-card">
+                            <img src="MacBookAir.jpg" alt="Product Image">
+                            <h2>Laptop</h2>
+                            <p>En annan laptop, också från ett av världens kändaste märken.</p>
+                            <div class="price">16799kr</div>
+                            <button class="cardBtn">Köp</button>
+                        </div>
+            
+                        <!-- Product Card 5 -->
+                        <div class="product-card">
+                            <img src="Camera.jpg" alt="Product Image">
+                            <h2>Kamera</h2>
+                            <p>Senaste kameran gjort för att ta de bästa bilderna.</p>
+                            <div class="price">10kr</div>
+                            <button class="cardBtn">Köp</button>
+                        </div>
+            
+                        <!-- Product Card 6 -->
+                        <div class="product-card">
+                            <img src="Mouse.jpg" alt="Product Image">
+                            <h2>Datormus</h2>
+                            <p>Mus gjord specifikt för spel.</p>
+                            <div class="price">1099kr</div>
+                            <button class="cardBtn">Köp</button>
+                        </div>
+                    </div>
+                    <div class="product-grid">   
+
+                        <!-- Product Card 7 -->
+                        <div class="product-card">
+                            <img src="Keyboard .jpg" alt="Product Image">
+                            <h2>Tangentbord</h2>
+                            <p>Speltangentbord av bästa klass, gjord för effektivt spelande.</p>
+                            <div class="price">2199kr</div>
+                            <button class="cardBtn">Köp</button>
+                        </div>
+            
+                        <!-- Product Card 8 -->
+                        <div class="product-card">
+                            <img src="Headphones.jpg" alt="Product Image">
+                            <h2>Hörlurar</h2>
+                            <p>Hörlurar med bästa ljudet på marknaden.</p>
+                            <div class="price">1599kr</div>
+                            <button class="cardBtn">Köp</button>
+                        </div>
+            
+                        <!-- Product Card 9 -->
+                        <div class="product-card">
+                            <img src="Laptop.jpg" alt="Product Image">
+                            <h2>Laptop</h2>
+                            <p>Den tidigare versionen av den bästa laptopen tillgänglig.</p>
+                            <div class="price">2699kr</div>
+                            <button class="cardBtn">Köp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--///////////////////  PAGE 2 - SOMETHING ELSE  \\\\\\\\\\\\\\\\\\-->
+        <div id="about" class="page">
+            <h1>Om Oss</h1>
+            <p class="omOssText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem cum placeat eligendi iusto commodi sed, iure consequuntur, laudantium nostrum aut aliquid adipisci sit! Officiis delectus, harum molestiae ducimus nemo ipsa quibusdam sunt iure in. Eaque itaque dignissimos aperiam esse numquam quas necessitatibus? Debitis ut, tempora nam repellat ipsa asperiores enim nostrum qui laboriosam itaque nesciunt saepe corporis dicta iusto perferendis cum eum rerum doloremque est consequatur odio. Tempora nihil blanditiis eveniet commodi ratione quibusdam ipsam, excepturi dolorum consequatur similique consectetur autem numquam qui, ex reprehenderit. Itaque vitae alias nulla ullam iste nihil, dolores accusamus fugit repellat perferendis maiores reiciendis, dolore atque nemo tempore ex ipsa dignissimos blanditiis! Molestiae, pariatur consequatur impedit inventore, amet modi tempore distinctio aut animi reiciendis numquam, ab reprehenderit. Tempora eaque adipisci similique, sint ipsam cumque corrupti itaque, quam iusto officiis minima a earum explicabo omnis nulla pariatur minus delectus magni rerum vero rem! Repudiandae sapiente quam perspiciatis laborum nemo aperiam, ut doloremque? Laudantium provident tempore dicta, rem excepturi, sed architecto necessitatibus ipsa perferendis molestias in ad velit? Ut harum similique excepturi, consequuntur dolorem consectetur architecto, dolore ullam qui quod est, minima nostrum quisquam! Temporibus, dolores odit sed debitis exercitationem, eaque quaerat fugiat nam cumque incidunt perspiciatis dolore, voluptatibus a odio aliquam eum doloribus atque iusto. Ipsum magni quos ratione minima eum eius similique quaerat voluptates laboriosam? Quo hic eveniet odit, rem quisquam recusandae animi saepe beatae perspiciatis optio fugiat voluptatem velit molestias mollitia repudiandae soluta amet impedit. Repudiandae, quae, omnis libero blanditiis eos reprehenderit magnam adipisci tenetur, sunt modi ipsa at laborum ab quidem laboriosam aperiam commodi! Labore, ullam dolores! Aspernatur adipisci ipsa ab nobis alias, quibusdam vel vero repellat. Saepe, temporibus quidem iusto quia earum perspiciatis quos quo nam labore itaque deserunt cum laborum eligendi nostrum ratione, sint aliquam non ullam sapiente. Tempore, a dolores?</p>
+            <p class="omOssText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores provident perferendis esse voluptatibus voluptatum corrupti, a, laboriosam voluptates illo architecto voluptatem. Beatae saepe, reiciendis blanditiis tenetur facere animi hic distinctio recusandae voluptas quasi possimus! Sint, eum nam suscipit nulla porro beatae, culpa harum debitis, quo facilis quam doloremque voluptatem voluptate pariatur quos. Assumenda dolorum similique porro distinctio ipsum, iure at fugiat aliquid. Aliquid consequuntur reiciendis eos dignissimos laboriosam inventore assumenda consequatur nam unde. Fuga autem placeat illum consequatur, eius veritatis fugiat aperiam, dignissimos voluptatem at, consequuntur dolore nemo nesciunt accusamus doloremque deserunt ex. Voluptas debitis facere, architecto quas adipisci nostrum.</p>
+        </div>
+<!--///////////////////  PAGE 3 - SOMETHING ELSE  \\\\\\\\\\\\\\\\\\-->
+        <div id="contact" class="page">
+            <h1>Licenser</h1>
+            <p>Detta är licenserna till bilderna som använts på startsidan.</p>
+            <div class="Licenser">
+                <p>Foto på Datormus av <a href="https://unsplash.com/@v3frankie">Frankie</a> på <a href="https://unsplash.com">Unsplash</a>.</p>
+                <p>Foto på MacBook Air av <a href="https://unsplash.com/@2hmedia">2H Media</a> på <a href="https://unsplash.com">Unsplash</a>.</p>
+                <p>Foto på Kamera av <a href="https://unsplash.com/@timschmidbauer">Tim Schmidbauer</a> på <a href="https://unsplash.com">Unsplash</a>.</p>
+                <p>Foto på Samsung Mobil av <a href="https://unsplash.com/@spxclicks">Sanju Pandita</a> på <a href="https://unsplash.com">Unsplash</a>.</p>
+                <p>Foto på Laptop av <a href="http://unsplash.com/@fujiphilm">Fujiphilm</a> på <a href="https://unsplash.com">Unsplash</a>.</p>
+                <p>Foto på Tangentbord av <a href="http://unsplash.com/@thekidph">Jan Loyde Cabrera</a> på <a href="https://unsplash.com">Unsplash</a>.</p>
+            
+                <p style="font-weight: bold;">Alla bilder ovan är licensierade under <a href="https://unsplash.com/license">Unsplash Free License</a>.</p>
+            </div>
+            <div class="Licenser">
+                <p>Foto på Hörlurar av <a href="https://www.flickr.com/photos/51219817@N04/">gcg2009</a> på 
+                    <a href="https://www.flickr.com/">Flickr</a> (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>).</p>
+                    
+                <p>Foto på Apple dator under Public Domain
+                    <a href="https://www.flickr.com/photos/personalgraphic/53097628210/">Flickr Orginalbild</a></p>
+                        
+                <p style="font-weight: bold;">De två bilderna ovan är tagna från Flickr 
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
