@@ -31,7 +31,7 @@ $(document).ready(function () {
     $('.product-card').hover(
       function () {
         // Mus över: förstora kortet
-        $('.product-card, .product-card h2, .product-card p, .product-card .price, .product-card button').css('transition', 'transform 0.3s ease');
+        $('.product-card, .product-card p, .product-card button').css('transition', 'transform 0.3s ease');
         $(this).css('transform', 'scale(1.15)');
 
         $('.product-card').not(this).css('transform', 'scale(0.97)');
